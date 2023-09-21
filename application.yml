@@ -1,11 +1,11 @@
 # config server
 config: 
-  uri: "http://192.168.0.2:8888"
+  uri: "http://localhost:8888"
 
 # eureka client 
 eureka:
   client:
-    uri: "http://192.168.0.3:8761/eureka"
+    uri: "http://localhost:8761/eureka"
 
 # test
 message: "Voici mon message"
@@ -13,34 +13,34 @@ message: "Voici mon message"
 # project database connection
 project: 
   datasource:
-    url: jdbc:postgresql://192.168.0.5:5432/invest_gate_projects
+    url: jdbc:postgresql://localhost:5432/invest_gate_projects
     username: postgres
     password: postgresql
 
 # admin database connection
 admin: 
   datasource:
-    url: jdbc:postgresql://192.168.0.5:5432/invest_gate_admins
+    url: jdbc:postgresql://localhost:5432/invest_gate_admins
     username: postgres
     password: postgresql
 
 # investor database connection
 investor: 
   datasource:
-    url: jdbc:postgresql://192.168.0.5:5432/invest_gate_investors
+    url: jdbc:postgresql://localhost:5432/invest_gate_investors
     username: postgres
     password: postgresql
 
 # student database connection
 student: 
   datasource:
-    url: jdbc:postgresql://192.168.0.5:5432/invest_gate_students
+    url: jdbc:postgresql://localhost:5432/invest_gate_students
     username: postgres
     password: postgresql
 
 agreement: 
   datasource:
-    url: jdbc:postgresql://192.168.0.5:5432/invest_gate_agreements
+    url: jdbc:postgresql://localhost:5432/invest_gate_agreements
     username: postgres
     password: postgresql
 
